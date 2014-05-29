@@ -1,0 +1,320 @@
+@import '../bootstrap/less/bootstrap.less';
+
+@iconSpritePath:          "../bootstrap/img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../bootstrap/img/glyphicons-halflings-white.png";
+
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+@screen-phone:               @screen-xs;
+
+// Small screen / tablet
+@screen-sm:                  800px;
+@screen-tablet:              @screen-sm;
+
+// Medium screen / desktop
+@screen-md:                  800px;
+@screen-desktop:             @screen-md;
+
+// Large screen / wide desktop
+@screen-lg:                  800px;
+@screen-lg-desktop:          @screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+
+// Small screen / tablet
+@container-tablet:            800px ;
+
+// Medium screen / desktop
+@container-desktop:           800px ;
+
+// Large screen / wide desktop
+@container-lg-desktop:        800px ;
+
+
+@grid-gutter-width:         20px;
+
+
+@titleFont: 'Kaushan Script', cursive;
+
+
+// COLORS
+@yellow: #ffcc33;
+@yellow_lt: #fff7db;
+@yellow_dk: rgb(207, 143, 6);
+@yellow_shadow: rgba( 207, 143, 6, .5);
+
+@brown: #5e401b;
+@brown_lt: #b27424;
+
+@white: #ffffff;
+
+@shadow_color: rgba(0, 0, 0, .2);
+
+@shadow: 4px 0px 2px @shadow_color;
+@drop-shadow: 0px 4px 2px @shadow_color;
+@top-shadow: 0px -4px 2px @shadow_color;
+@side-shadow: 4px 0px 2px @shadow_color, -4px 0px 2px @shadow_color;
+
+html, body {
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: @yellow_lt;
+  color: @brown;
+}
+
+body.modal-open {
+  margin-right: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: @titleFont;
+  color: @brown;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+}
+h2,
+.h2 {
+  font-size: 34px;
+}
+h3,
+.h3 {
+  font-size: 28px;
+}
+h4,
+.h4 {
+  font-size: 20px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-weight: bold;
+  color: @yellow;
+  text-shadow: 1px 1px @yellow_shadow;
+
+  &:active {
+  }
+
+  &:hover {
+    color: lighten(@yellow_dk, 10%);
+  }
+}
+
+.pull {
+  background: fadeout(@yellow_lt, 65%);
+  .box-shadow(2px 2px 1px lighten(@shadow_color, 50%));
+}
+
+#wrapper {
+
+}
+
+header {
+  border-bottom: 2px solid @brown_lt;
+  background: @brown url('../imgs/bg-header.jpg') center center repeat-x;
+  height: 150px;
+  .box-shadow(@drop-shadow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .container {
+    position: relative;
+    height: 150px;
+
+    #logo {
+      display: block;
+      position: absolute;
+
+      top: 1px;
+      left: -40px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      #logo-div {
+        padding-right: 68px;
+        background: transparent url(../imgs/chicken_logo.png) right 17px no-repeat;
+
+        h1 {
+          color: @yellow;
+          font-family: 'Kaushan Script', cursive;
+          font-size: 75pt;
+          line-height: 78px;
+        }
+      }
+    }
+
+    .tabbable {
+      .nav.nav-tabs {
+        border: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+
+        li {
+          a {
+            background: transparent;
+            border: 0;
+            font-weight: bold;
+            color: @yellow;
+            text-shadow: 1px 1px @yellow_shadow;
+
+            .border-radius(0);
+
+            &:active {
+              background: transparent;
+              border: 0;
+            }
+
+            &:hover {
+              background: transparent;
+              border: 0;
+              color: lighten(@yellow_dk, 10%);
+            }
+
+            &:focus {
+              background: transparent;
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+article {
+
+  .container {
+    z-index: 10;
+    background: @white;
+    .box-shadow(@side-shadow);
+
+    padding: 150px 10px 200px 10px;
+
+    #barn {
+      margin-bottom: 20px;
+      margin-left: -10px;
+      border-bottom: 1px solid @brown;
+    }
+
+    .pull {
+      text-align: center;
+      padding: 20px 16px 30px;
+      color: @brown;
+
+      h3 {
+        color: @brown;
+        padding:0;
+        margin: 0 0 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-style: italic;
+          font-family: @font-family-serif;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    .bio-row {
+      margin-top: 30px;
+
+      img {
+        border: 1px solid @brown;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  z-index: 100;
+  .box-shadow(@top-shadow);
+  border-top: 2px solid @brown_lt;
+  background: @brown url('../imgs/bg-footer.jpg') center center repeat;
+  height: 200px;
+
+  #logo-div {
+    padding-right: 30px;
+    height: 31px;
+    background: transparent url(../imgs/chicken_logo_sm.png) right top no-repeat;
+    width: 63%;
+    margin: 0 auto;
+
+    h1 {
+      color: @yellow;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 22pt;
+      line-height: 18px;
+      text-align: right;
+      padding-top: 3px;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    text-align: center;
+    color: @white;
+
+    &.description {
+      margin-top: 65px;
+      font-size: .95em;
+    }
+  }
+}
+
+.border-radius(@radius) {
+  .border-top-radius(@radius);
+  .border-right-radius(@radius);
+  .border-bottom-radius(@radius);
+  .border-left-radius(@radius);
+}
+
+.modal-dialog {
+  width: 900px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px @yellow_shadow;
+}
+
+
+
