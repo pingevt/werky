@@ -8,9 +8,9 @@
 
             <div class="row">
               <div class="col-md-7 col-md-offset-1">
-                <h4>We current have 2 young Boer goats</h4>
+                <h4>We current have 5 young Boer goats</h4>
                 <p>There is a synergy between chickens and other types of grazing livestock. Usually this is done with beef so that the longer grass can be utilized by the cattle. The chickens are then moved into the area the next day so that they can eat short tender grass.  They will also scratch the manure from the grazing animals apart so it will be dispersed and absorbed into the soil quickly.</p>
-                <p>We are trying a few goats instead of cattle.  Goats actually prefer weeds and broad leaf plants whenever possible, therefore as we plant new pasture, the goats should keep weeds from proliferating and keep us from having to use sprays.</p>
+                <p>We are trying a few goats instead of cattle. Goats actually prefer weeds and broad leaf plants whenever possible, therefore as we plant new pasture, the goats should keep weeds from proliferating and keep us from having to use sprays.</p>
                 <p>I am not sure if or when we will be able to start selling goats for meat, but I will keep this site updated on our progress.</p>
 
                 <div class="row">

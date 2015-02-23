@@ -7,7 +7,7 @@
             </div>
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-                <p>This farm was owned by distant relatives since ????. Nettie Miller then sold the farm to my grandfather Ray in 1972.</p>
+                <p>This farm was owned by distant relatives since ????. Nettie Miller then sold the farm to Raymond in 1972.</p>
               </div>
             </div>
 

@@ -10,7 +10,7 @@
               <div class="col-md-7 col-md-offset-1">
                 <h3>Eggs</h3>
                 <p>We currently have aprox 150 laying hens.  We house our hens in movable wagons so that they can be on pasture the majority of the year.</p>
-                <p class="price text-shadow">–$3.00 per dozen</p>
+                <p class="price text-shadow">–$3.50 per dozen</p>
 
                 <div class="row">
                   <div class="col-md-4">
@@ -82,6 +82,25 @@
                     <li>7 times more beta carotene</li>
                   </ul>
                 </div>
+
+
+                <div class="pull price-list">
+                  <h3>Product List:</h3>
+                  <ul>
+                    <li>Pasture Raised Brown Eggs <span class="price">$3.50/doz</span></li>
+                  </ul>
+
+                  <h4>Pasture Raised Chicken</h4>
+                  <p>Chicken is available fresh or frozen - Please contact us to arrange pickup of fresh chicken at the farm or on butchering days.</p>
+                  <ul>
+                    <li>Whole <span class="price">$3.50/lb</span></li>
+                    <li>Boneless Breasts <span class="price">$7.00/lb</span></li>
+                    <li>Legs and thighs <span class="price">$4.00/lb</span></li>
+                    <li>Wings <span class="price">$4.00/lb</span></li>
+                    <li>Backs for soup <span class="price">$2.50 ea.</span></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
